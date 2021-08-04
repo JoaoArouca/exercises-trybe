@@ -1,0 +1,1 @@
+No segundo dia do bloco 3, foi o momento de introduçao ao CSS e suas ferramentas de estilo. Na atividade, foi dada uma estrutura em html e requisitado algumas estilizaçoes usando ferramentas de css, como mudar cores de fundo e de texto, mudar familia de fonte e alterar tamanhos de fontes. 
