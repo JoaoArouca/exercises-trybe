@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercícios dia 6.1 </title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="title"> Formulário de Currículo </h1>
+    </header>
+    <form method="get" id="form">
+        <fieldset>Digite seu nome:
+            <input type="text" maxlength="40" name="name" required> 
+            <br>
+            Email:
+            <input type="text" maxlength="50" required> 
+            <br>
+            CPF:
+            <input type="text" maxlength="11" required>
+            <br>
+            Endereço:
+            <input type="text" maxlength="200" required>
+            <br>
+            Cidade:
+            <input type="text" maxlength="28" required>
+            <br>
+            Estado:
+            <select id="brasil-states" onclick="geraEstados()" ></select>
+            <br>
+            Complemento:
+            <br>
+            <input type="radio" required value="Casa" name="complemento">Casa
+            <input type="radio" required value="Apartamento" name="complemento">Apartamento
+            <br>
+            <button type="submit"> Feito!</button>
+
+        </fieldset>
+
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
