@@ -1,0 +1,17 @@
+#title {
+    text-align: center;
+    padding: 25px;
+    margin: auto;
+    background-color: #c47f32;
+    font-weight: 600;
+    color: white;
+}
+#body {
+    background-color: #ffc154
+
+}
+#form {
+    width: 50%;
+    margin: auto;
+    margin-top: 45px;
+}
