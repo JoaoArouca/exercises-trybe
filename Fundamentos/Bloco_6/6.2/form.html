@@ -36,10 +36,21 @@
             <input type="radio" required value="Casa" name="complemento">Casa
             <input type="radio" required value="Apartamento" name="complemento">Apartamento
             <br>
-            <button class="btn-sucess" type="submit"> Feito!</button>
-
         </fieldset>
-
+        <fieldset id="form2" class="form-group"> Resumo do Currículo:
+            <textarea class="form-control" maxlength="1000" required></textarea>
+            <br>
+            Cargo:
+            <input class="form-control" type="text" maxlength="40" required>
+            <br>
+            Descrição do Cargo:
+            <textarea class="form-control" maxlength="500" required></textarea>
+            <br>
+            Data de Início:
+            <input class="form-control" type="date" required>
+            <br>
+        </fieldset>
+        <button id="button" class="btn-sucess btn-secondary btn" type="submit"> Feito!</button>
     </form>
     
     <script src="script.js"></script>
