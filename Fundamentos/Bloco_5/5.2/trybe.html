@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Exercício 5.2</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    section {
+      border-color: black;
+      border-style: solid;
+    }
+
+    .title {
+      text-align: center;
+    }
+
+    .main-content {
+      background-color: yellow;
+    }
+
+    .main-content .center-content {
+      background-color: red;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      height: 100px;
+    }
+
+    .main-content .center-content p {
+      font-style: italic;
+    }
+
+    .main-content .left-content {
+      background-color: green;
+      width: 60%;
+      margin-left: 0;
+      margin-right: auto;
+    }
+
+    .main-content .left-content .small-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 100%;
+    }
+
+    .main-content .right-content {
+      background-color: blue;
+      width: 60%;
+      margin-left: auto;
+      margin-right: 0;
+    }
+
+    .main-content .description {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <script>
+    // COLOQUE SEU CÓDIGO AQUI   
+
+    /* Busca elementos com getElement e querySelector */
+    const body = document.querySelector('body');
+    
+    /* Cria elementos */
+    let h1 = document.createElement('h1');
+    let head = document.createElement('header');
+    let main = document.createElement('main');
+    let p = document.createElement("p");
+    let section = document.createElement('section');
+    let img = document.createElement('img');
+    let ul = document.createElement('ul');
+    let h3Um = document.createElement('h3');
+    let h3Dois = document.createElement('h3');
+    let h3Tres = document.createElement('h3');
+    let section1 = document.createElement('section');
+    let section2 = document.createElement('section');
+
+
+    /* Coloca elementos no DOM */
+    body.appendChild(head);
+    head.appendChild(h1);
+    body.appendChild(main);
+    main.appendChild(section);
+    main.appendChild(section1);
+    main.appendChild(section2);
+    section.appendChild(p);
+    section.appendChild(img);
+    section.appendChild(ul);
+    main.appendChild(h3Um);
+    main.appendChild(h3Dois);
+    main.appendChild(h3Tres);
+
+    /* Classes e id para elementos */
+    h1.id = 'title';
+    h1.classList.add('title');
+    head.id = 'cabecalho';
+    main.classList.add('main-content');
+    section.classList.add('center-content')
+    section1.classList.add('right-content');
+    section2.classList.add('left-content');
+    img.classList.add('small-image');
+    h3Um.classList.add('description');
+    h3Dois.classList.add('description');
+    h3Tres.classList.add('description');
+
+    /* Estilização dos elementos */ 
+    head.style.margin = 0;
+    h1.innerText = 'Exercício 5.2 - JavaScript DOM';
+    h1.style.backgroundColor = 'green';
+    h1.style.padding = '30px';
+    p.innerText = 'Oi, Eu sou Goku!';
+    img.src = 'https://picsum.photos/200'; 
+    ul.innerText = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'sete',
+  'oito', 'nove', 'dez'];    
+    h3Um.innerText = 'OI';
+    h3Dois.innerText = 'Hello';
+    h3Tres.innerText = 'Ohayo';
+    section.style.marginRight = 'auto';
+    section.style.backgroundColor = 'green';
+    /* main.removeChild(section); */
+    
+    
+    
+
+  </script>
+</body>
+
+</html>
