@@ -43,9 +43,13 @@ holiday();
 function changeBG () {
   const holidayBtn = document.getElementById('btn-holiday');
   holidayBtn.addEventListener('click', function() {
-    const feriados = document.querySelectorAll('.holiday');
-    holidayBtn.style.backgroundColor = 'green';  
-    feriados.style.backgroundColor = 'green';
+    let feriados = document.getElementsByClassName('day');
+    console.log(feriados);
+    for (let index = 0; index < feriados.length; index++) {
+      /* feriados[index].classList.toggle('day'); */
+      feriados[index].style.backgroundColor = 'green';
+      feriados[index].style.color = 'black';
+    }
   });
 };
 changeBG();
@@ -71,3 +75,11 @@ function changeFriday () {
   })
 };
 changeFriday();
+
+function zoom (evt) {
+  evt.target.style.fontSize = '30px';
+}
+
+const ul = document.getElementById('days');
+ul.addEventListener('mouseover', zoom);
+
